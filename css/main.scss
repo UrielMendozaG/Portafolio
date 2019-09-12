@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+$background: url("../resources/elipses2.png");
+
+@mixin background-text {
+  background: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: $background repeat 0 0;
+  background-size: 2em;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  padding: 4em 6em 0em 6em;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  .logo {
+    grid-column: span 8 / auto;
+    width: 30%;
+  }
+  .proyectos {
+    grid-column: span 2 / auto;
+    width: 75%;
+  }
+  .contacto {
+    grid-column: span 2 / auto;
+    width: 50%;
+  }
+
+  > img {
+    @include background-text();
+  }
+
+  hr {
+    grid-column: span 12 / auto;
+    margin: 0.5em 0em;
+    border-style: solid;
+    border-width: 0.09em;
+  }
+}
+
+.elipse {
+  position: relative;
+
+  grid-row: span 8 / auto;
+
+  .elipseboi {
+    position: absolute;
+    width: 5%;
+    opacity: 0;
+  }
+}
+
+.proyecto {
+  position: absolute;
+  display: none;
+  align-self: center;
+
+  background: white;
+  margin: 0.2em;
+
+  a {           
+    text-decoration: none;
+    color: black;
+  }
+
+  hr {
+    border-style: solid;
+    border-width: 0.09em;   
+    margin: 0.2em 0em;
+  }
+
+  h3{
+      font-weight: 1;
+  }
+}
+
+.campeonisimo {
+  top: 12%;
+}
+
+.onoff {
+  top: 40%;
+}
+
+.github {
+  top: 65%;
+}
+
+.show {
+  display: initial;
+}
