@@ -73,6 +73,7 @@ header hr {
       align-self: center;
   background: white;
   margin: 0.2em;
+  padding: 0.2em;
 }
 
 .proyecto a {
@@ -94,12 +95,52 @@ header hr {
   top: 12%;
 }
 
+.campeonisimo:hover {
+  top: 11%;
+  cursor: pointer;
+}
+
 .onoff {
   top: 40%;
 }
 
+.onoff:hover {
+  top: 39%;
+  cursor: pointer;
+}
+
 .github {
   top: 65%;
+}
+
+.github:hover {
+  top: 64%;
+  cursor: pointer;
+}
+
+.atras {
+  position: absolute;
+  top: 85%;
+  display: none;
+}
+
+.ss {
+  position: absolute;
+  display: none;
+  left: 50%;
+  top: 12%;
+}
+
+.ss img {
+  width: 80%;
+}
+
+.tecnologias {
+  top: 20%;
+}
+
+.boton {
+  display: none;
 }
 
 .show {
