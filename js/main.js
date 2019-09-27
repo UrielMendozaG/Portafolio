@@ -35,6 +35,7 @@ let proyectos = {
           tecnologias.mostrar(0);
           atras.mostrar(0);
           botones.mostrar(0);
+          botones.mostrar(1);
           break;
         case 1:
           this.desaparecerProyectos(1);
@@ -42,7 +43,8 @@ let proyectos = {
           tecnologias.mostrar(1);
           atras.mostrar(1);
           this.animation2(this.proyectos[num], 0, 0, 1, 1,"40%","13%")
-          botones.mostrar(1);
+          botones.mostrar(2);
+          botones.mostrar(3);
           break;
         case 2:
           this.desaparecerProyectos(2);
@@ -50,7 +52,7 @@ let proyectos = {
           screenshots.mostrar(2);
           tecnologias.mostrar(2);
           this.animation2(this.proyectos[num], 0, 0, 1, 1,"65%","13%")
-          botones.mostrar(2);
+          botones.mostrar(4);
           break;
       }
     });
