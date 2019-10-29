@@ -165,9 +165,15 @@ let botones = {
     this.botones[num].classList.add("show");
   }
 }
-proyectos.getProyectos();
 
-setTimeout(() => {
-  //mostrar proyectos
-  proyectos.mostrarProyectos();
-}, 2500);
+window.onload = main;
+
+function main(){
+  setTimeout(() => {
+    proyectos.getProyectos();
+    proyectos.mostrarProyectos();
+  }, 2500);
+}
+
+
+console.log(document.readyState + " hola perra");
